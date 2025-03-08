@@ -18,6 +18,11 @@ This script is a modified version of the one provided in [Hack The Box Academy](
 
 ReconSpider only requires `scrapy` to work. Install it with:
 
-```plaintext
+```sh
 pip install scrapy
+```
+Additionally, you can use `jq` to parse the output and only retrieve a specific field.
+
+```sh
+ReconSpider <URL> | jq .field
 ```
